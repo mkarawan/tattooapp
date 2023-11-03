@@ -1,0 +1,22 @@
+.design-card{
+    max-width: 100%;
+    border: 1px solid var(--red);
+    margin-bottom: 2rem;
+}
+a{
+    text-decoration: none;
+}
+.design-card-description{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(var(--red), var(--red)) no-repeat center/1px 100%;
+
+
+}
+p{
+    color: var(--pink-text-color);
+    font-weight: 500;
+}
+img{
+    max-width: 100%;
+}
