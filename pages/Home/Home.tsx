@@ -7,13 +7,16 @@ import DesignCard from "../../components/DesignCard/DesignCard.tsx";
 const Home: React.FC = () => {
   return (
     <>
-      <div className="greeting-text">
-        <h1 className="title-text">
-          Otwórz drzwi do nieskończonych możliwości{" "}
-        </h1>
+      <div className="padding">
+        <div className="greeting-text">
+          <h1 className="title-text">
+            Otwórz drzwi do nieskończonych możliwości{" "}
+          </h1>
+        </div>
+        <SearchBar />
+        <h1 className={"section-title"}>Najnowsze wzory</h1>
       </div>
-      <SearchBar />
-      <h1 className={"section-title"}>Najnowsze wzory</h1>
+
       <DesignCard />
       <DesignCard />
       <DesignCard />

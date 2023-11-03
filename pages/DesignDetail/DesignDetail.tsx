@@ -1,13 +1,23 @@
 import React from "react";
-import BackButton from "../../components/BackButton/BackButton.tsx";
+import BackButton from "../../components/BackButton/BackButton";
+import "./DesignDetail.css";
+import TattooInfo from "../../components/TattooInfo/TattooInfo.tsx";
 
 const DesignDetail: React.FC = () => {
   return (
     <>
-      <h1>Design detail soon</h1>
-      <h1>Design detail soon</h1>
-      <h1>Design detail soon</h1>
       <BackButton />
+      <div className="padding">
+        <div className={"first-line"}>
+          <h1 className="title-text">Nazwa wzoru</h1>
+          <p className="price">od 500 zł</p>
+        </div>
+        <h1>TU KALENDARZ</h1>
+        <button className="hour-btn">13:00</button>
+        <button className="hour-btn">17:00</button>
+        <TattooInfo />
+        <button className="gradientBtn book-btn">Umów się</button>
+      </div>
     </>
   );
 };

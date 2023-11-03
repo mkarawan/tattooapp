@@ -9,8 +9,12 @@ const Artists: React.FC = () => {
   return (
     <>
       <BackButton />
-      <h1 className={"title-text header-text"}>Artyści</h1>
-      <SearchBar />
+
+      <div className="padding">
+        <h1 className={"title-text header-text"}>Artyści</h1>
+        <SearchBar />
+      </div>
+
       <Link to="/artistDetail">
         <ArtistCard />
       </Link>

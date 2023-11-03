@@ -1,0 +1,79 @@
+.tattoo-info-title{
+    color: var(--white-text-color);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+.input{
+    border: 1px solid var(--burgundy);
+    background: none;
+    outline: none;
+    padding: 10px;
+    max-width: 200px;
+    width: 100%;
+    color: var(--white-text-color);
+    border-radius: 7px;
+
+}
+.checkboxes{
+    display: flex;
+}
+
+.checkbox{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 2rem;
+}
+.checkbox:first-child{
+    margin-left: 0;
+}
+.checkbox input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.new-checkbox{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+    border-radius: 0px;
+}
+.checkbox input:checked ~ .new-checkbox{
+    background: var(--burgundy);
+}
+.new-checkbox:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.checkbox input:checked ~ .new-checkbox:after {
+    display: block;
+}
+.checkbox .new-checkbox:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.textarea{
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 130px;
+    margin-top: 1.5rem;
+    font-family: inherit;
+    font-size: inherit;
+}

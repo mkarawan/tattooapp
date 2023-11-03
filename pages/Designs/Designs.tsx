@@ -9,8 +9,10 @@ const Designs: React.FC = () => {
   return (
     <>
       <BackButton />
-      <h1 className={"title-text header-text"}>Wzory</h1>
-      <SearchBar />
+      <div className="padding">
+        <h1 className={"title-text header-text"}>Wzory</h1>
+        <SearchBar />
+      </div>
       <Link to="/designDetail">
         <DesignCard />
       </Link>

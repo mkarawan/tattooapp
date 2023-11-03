@@ -11,7 +11,7 @@ import ArtistDetail from "../pages/ArtistDetail/ArtistDetail";
 function App() {
   return (
     <>
-      <header>
+      <header className="padding">
         <IconContext.Provider value={{ size: "40px", color: "var(--red)" }}>
           <div>
             <GiHamburgerMenu />

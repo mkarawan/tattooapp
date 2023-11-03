@@ -1,0 +1,12 @@
+.price{
+    color: var(--white-text-color);
+    font-size: larger;
+}
+.padding{
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.book-btn{
+    max-width: 250px;
+    margin-top: 1.5rem;
+}

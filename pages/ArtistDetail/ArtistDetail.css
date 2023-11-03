@@ -3,6 +3,7 @@
 }
 .detail-tags{
     justify-content: flex-end;
+    margin: 1rem 0;
 }
 .artist-date p{
     color: var(--white-text-color);
