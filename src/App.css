@@ -1,12 +1,13 @@
 :root {
-  --background-color: #0C0A10;
+  --background-color: #0c0a10;
   --font-size: 14px;
   --padding: 10px;
   --white-text-color: #ffffff;
-  --pink-text-color: #C54672;
-  --red: #7C162E;
-  --burgundy: #5C162E;
-  --grey-text-color: #BCBCBC;
+  --pink-text-color: #c54672;
+  --red: #7c162e;
+  --burgundy: #5c162e;
+  --grey-text-color: #bcbcbc;
+  --burgundy-transparent: rgba(124, 22, 46, 0.45);
 }
 
 #root {
@@ -15,27 +16,26 @@
   /*padding: 2rem;*/
   /*text-align: center;*/
 }
-body{
-  font-family: 'Inter', sans-serif;
+body {
+  font-family: "Inter", sans-serif;
   font-style: normal;
-
   color: var(--white-text-color);
   background-color: var(--background-color);
-margin: 0 auto;
+  margin: 0 auto;
   width: 100%;
   /*text-align: center;*/
   max-width: 400px;
 }
-header{
+header {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
 }
-header img{
+header img {
   max-width: 40px;
 }
-.title-text{
+.title-text {
   color: var(--pink-text-color);
   font-size: 24px;
   font-weight: 600;

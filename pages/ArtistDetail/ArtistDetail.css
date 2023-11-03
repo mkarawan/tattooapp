@@ -1,0 +1,52 @@
+.artist-name{
+    margin: 0;
+}
+.detail-tags{
+    justify-content: flex-end;
+}
+.artist-date p{
+    color: var(--white-text-color);
+    font-size: larger;
+
+}
+.artist-description{
+    margin: 0;
+    color: var(--white-text-color);
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+.gradientBtn{
+    cursor: pointer;
+    color: var(--pink-text-color);
+    font-weight: 600;
+    font-size: inherit;
+    line-height: 117.023%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    background: linear-gradient(90deg, var(--burgundy) 4.49%, var(--red) 93.87%);
+    display: block;
+
+}
+.designs-category p{
+    cursor: pointer;
+    border: 1px solid var(--burgundy);
+    width: 50%;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+.designs-category{
+    display: flex;
+}
+.chosen-category{
+    background-color: var(--burgundy-transparent);
+}
+.designs-title{
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}

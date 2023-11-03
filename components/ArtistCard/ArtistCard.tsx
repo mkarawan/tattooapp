@@ -9,7 +9,7 @@ const ArtistCard: React.FC = () => {
     <>
       <div className={"design-card"}>
         <img src={"artist1.jpg"} />
-        <div className={"artist-card-first-line"}>
+        <div className={"artist-card-first-line first-line"}>
           <p>Imię artysty</p>
           <Stars />
         </div>

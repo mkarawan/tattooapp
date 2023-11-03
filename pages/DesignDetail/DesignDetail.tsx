@@ -5,6 +5,8 @@ const DesignDetail: React.FC = () => {
   return (
     <>
       <h1>Design detail soon</h1>
+      <h1>Design detail soon</h1>
+      <h1>Design detail soon</h1>
       <BackButton />
     </>
   );

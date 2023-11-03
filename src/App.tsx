@@ -6,7 +6,7 @@ import Home from "../pages/Home/Home";
 import Designs from "../pages/Designs/Designs";
 import DesignDetail from "../pages/DesignDetail/DesignDetail";
 import Artists from "../pages/Artists/Artists";
-import ArtistDetail from "../pages/AccountDetail/ArtistDetail";
+import ArtistDetail from "../pages/ArtistDetail/ArtistDetail";
 
 function App() {
   return (
