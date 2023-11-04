@@ -3,6 +3,7 @@ import "./ArtistDetail.css";
 import BackButton from "../../components/BackButton/BackButton";
 import Stars from "../../components/Stars/Stars";
 import DesignCard from "../../components/DesignCard/DesignCard";
+import { Link } from "react-router-dom";
 
 const ArtistDetail: React.FC = () => {
   return (
@@ -33,7 +34,9 @@ const ArtistDetail: React.FC = () => {
           Skóra to moje płótno, na którym tworzę niezwykłe opowieści i wyrażam
           osobowość każdego, kto zasiada w moim fotelu.{" "}
         </p>
-        <button className="gradientBtn">Wzór indywidualny</button>
+        <Link to={"/bookIndividual"}>
+          <button className="gradientBtn">Wzór indywidualny</button>
+        </Link>
         <p className="section-title designs-title">Wzory</p>
       </div>
 

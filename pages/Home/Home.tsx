@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Home.css";
 import SearchBar from "../../components/SearchBar/SearchBar.tsx";
 import DesignCard from "../../components/DesignCard/DesignCard.tsx";
@@ -20,12 +20,12 @@ const Home: React.FC = () => {
       <DesignCard />
       <DesignCard />
       <DesignCard />
-      <Link to="/designs">
-        <button>Wzory</button>
-      </Link>
-      <Link to="/artists">
-        <button>Artyści</button>
-      </Link>
+      {/*<Link to="/designs">*/}
+      {/*  <button>Wzory</button>*/}
+      {/*</Link>*/}
+      {/*<Link to="/artists">*/}
+      {/*  <button>Artyści</button>*/}
+      {/*</Link>*/}
     </>
   );
 };

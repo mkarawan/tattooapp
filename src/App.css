@@ -8,6 +8,7 @@
   --burgundy: #5c162e;
   --grey-text-color: #bcbcbc;
   --burgundy-transparent: rgba(124, 22, 46, 0.45);
+  --burgundy-transparent2: rgba(124, 22, 46, 0.21);
 }
 
 #root {

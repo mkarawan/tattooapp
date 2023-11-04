@@ -10,3 +10,44 @@
     max-width: 250px;
     margin-top: 1.5rem;
 }
+.design-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.design-date p{
+    margin: 0.3rem 0 0 0;
+}
+.favourites{
+    margin-right: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.favourites p{
+    letter-spacing: 2px;
+    font-size: large;
+    color: var(--grey-text-color);
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+}
+.favourites div{
+    margin-left: 0.3rem;
+}
+.tattoo-info{
+    margin: 1.5rem 0;
+    background-color: var(--burgundy-transparent2);
+}
+.tattoo-info-line{
+    border-bottom: 1px solid rgba(197, 70, 114, 0.32);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 1rem 1.5rem ;
+}
+.tattoo-info-line p {
+    color: var(--white-text-color);
+    text-transform: uppercase;
+    margin: 0;
+}

@@ -1,0 +1,31 @@
+.price{
+    color: var(--white-text-color);
+    font-size: larger;
+}
+.padding{
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.book-btn{
+    max-width: 250px;
+    margin-top: 1.5rem;
+}
+.hour{
+    font-size: inherit;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--burgundy);
+    display: block;
+    margin-bottom: 0.8rem;
+}
+.hour-btn{
+    background: none;
+    outline: none;
+    color: var(--burgundy);
+}
+.hour-btn-chosen{
+outline: none;
+    background-color: var(--burgundy);
+    color: var(--pink-text-color);
+}
