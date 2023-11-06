@@ -17,20 +17,27 @@ const Navbar: React.FC<{ hideNavbar: () => void }> = ({ hideNavbar }) => {
               <ImCross />
             </div>
           </IconContext.Provider>
-          <Link to="/artists">
-            <p>artyści</p>
-          </Link>
-          <Link to="/designs">
-            <p>wzory</p>
-          </Link>
-          <p>o nas</p>
-          <p>kontakt</p>
+          <div className="links">
+            <Link to="/artists">
+              <p className="uppercase" onClick={hideNavbar}>
+                artyści
+              </p>
+            </Link>
+            <Link to="/designs">
+              <p className="uppercase" onClick={hideNavbar}>
+                wzory
+              </p>
+            </Link>
+            <p className="uppercase">o nas</p>
+            <p className="uppercase">kontakt</p>
+          </div>
         </div>
-
-        <div className="user">
-          <img src="user.jpg" alt="user-avatar" />
-          <p>nazwa użytkownika</p>
-        </div>
+        <Link to="/account">
+          <div className="user" onClick={hideNavbar}>
+            <img src="user.jpg" alt="user-avatar" />
+            <p className="uppercase">nazwa użytkownika</p>
+          </div>
+        </Link>
       </div>
     </>
   );

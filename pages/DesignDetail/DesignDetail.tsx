@@ -35,16 +35,16 @@ const DesignDetail: React.FC = () => {
       </div>
       <div className="tattoo-info">
         <div className="tattoo-info-line">
-          <p>Miejsce</p>
-          <p>wszystkie</p>
+          <p className="uppercase-small">Miejsce</p>
+          <p className="uppercase-small">wszystkie</p>
         </div>
         <div className="tattoo-info-line">
-          <p>kolor</p>
-          <p>czarny</p>
+          <p className="uppercase-small">kolor</p>
+          <p className="uppercase-small">czarny</p>
         </div>
         <div className="tattoo-info-line">
-          <p>rozmiar</p>
-          <p>od 15cm</p>
+          <p className="uppercase-small">rozmiar</p>
+          <p className="uppercase-small">od 15cm</p>
         </div>
       </div>
     </>

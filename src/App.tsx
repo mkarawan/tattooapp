@@ -1,6 +1,4 @@
 import "./App.css";
-// import { GiHamburgerMenu } from "react-icons/gi";
-// import { IconContext } from "react-icons";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Designs from "../pages/Designs/Designs";
@@ -9,7 +7,9 @@ import Artists from "../pages/Artists/Artists";
 import ArtistDetail from "../pages/ArtistDetail/ArtistDetail";
 import BookingDesign from "../pages/Booking/BookingDesign";
 import BookingIndividual from "../pages/Booking/BookingIndividual";
-import Header from "../components/Header/Header.tsx";
+import Header from "../components/Header/Header";
+import Account from "../pages/Account/Account";
+import Favourites from "../pages/Favourites/Favourites";
 
 function App() {
   return (
@@ -24,6 +24,8 @@ function App() {
           <Route path="/artistDetail" element={<ArtistDetail />} />
           <Route path="/bookDesign" element={<BookingDesign />} />
           <Route path="/bookIndividual" element={<BookingIndividual />} />
+          <Route path="/account" element={<Account />} />
+          <Route path="/favourites" element={<Favourites />} />
         </Routes>
       </BrowserRouter>
     </>

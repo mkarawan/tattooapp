@@ -44,3 +44,15 @@ header img {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+.uppercase{
+  font-size: larger;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.uppercase-small{
+  color: var(--white-text-color);
+  text-transform: uppercase;
+  margin: 0;
+}

@@ -1,0 +1,39 @@
+.user-data img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card-row{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.card{
+    width: 100%;
+    height: 150px;
+    background-color: var(--burgundy-transparent);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card p{
+    margin: 0;
+}
+.card-row a{
+    flex: 7;
+}
+.card:nth-child(2) {
+    flex: 3;
+}
+
+.user-data{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.user-name{
+    max-width: 70%;
+}

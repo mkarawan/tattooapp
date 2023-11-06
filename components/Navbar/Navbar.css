@@ -12,14 +12,7 @@
     position: fixed;
     backdrop-filter: blur(5px);
 }
-.navbar p{
-    font-size: larger;
-    text-transform: uppercase;
-    color: var(--white-text-color);
-    font-weight: 600;
-    letter-spacing: 4px;
-    margin-top: 2.5rem;
-}
+
 .navbar .user{
     display: flex;
     padding-bottom: 2rem;
@@ -27,8 +20,11 @@
     max-width: 220px;
 }
 .navbar .user img{
-    width: 60px;
+    width: 70px;
     height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+
 }
 .navbar .user p{
     margin: 0;
@@ -40,4 +36,10 @@ span{
     height: 100%;
     position: fixed;
     top: 0;
+}
+.links{
+    padding-left: 1.5rem;
+}
+.links p{
+    margin-top: 2.5rem;
 }
