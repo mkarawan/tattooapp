@@ -22,18 +22,22 @@ const Account: React.FC = () => {
               <p className="title-text">ulubione</p>
             </div>
           </Link>
-
+          <Link to="/accountDetail">
+            <div className="card">
+              <p className="title-text">
+                da
+                <br />
+                ne
+              </p>
+            </div>
+          </Link>
+        </div>
+        <Link to="/visits">
           <div className="card">
-            <p className="title-text">
-              da
-              <br />
-              ne
-            </p>
+            <p className="title-text">moje wizyty</p>
           </div>
-        </div>
-        <div className="card">
-          <p className="title-text">moje wizyty</p>
-        </div>
+        </Link>
+
         <p className="title-text">Opinie</p>
         <OpinionCard />
         <OpinionCard />

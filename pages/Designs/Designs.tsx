@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import DesignCard from "../../components/DesignCard/DesignCard";
-import { Link } from "react-router-dom";
 import "./Design.css";
 import BackButton from "../../components/BackButton/BackButton.tsx";
 import SearchBar from "../../components/SearchBar/SearchBar.tsx";
+import ViewButton from "../../components/ViewButton/ViewButton.tsx";
 
 const Designs: React.FC = () => {
+  const [viewType, setViewType] = useState<boolean>(false);
+
   return (
     <>
       <BackButton />
@@ -13,15 +15,15 @@ const Designs: React.FC = () => {
         <h1 className={"title-text header-text"}>Wzory</h1>
         <SearchBar />
       </div>
-      <Link to="/designDetail">
+      <ViewButton
+        onClickColumns={() => setViewType(!setViewType)}
+        onClickRows={() => setViewType(!viewType)}
+      />
+      <div className={viewType ? "grid-view" : "view"}>
         <DesignCard />
-      </Link>
-      <Link to="/designCard">
         <DesignCard />
-      </Link>
-      <Link to="/designCard">
         <DesignCard />
-      </Link>
+      </div>
     </>
   );
 };

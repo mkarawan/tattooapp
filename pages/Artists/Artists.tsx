@@ -14,7 +14,6 @@ const Artists: React.FC = () => {
         <h1 className={"title-text header-text"}>Artyści</h1>
         <SearchBar />
       </div>
-
       <Link to="/artistDetail">
         <ArtistCard />
       </Link>

@@ -32,6 +32,7 @@
     padding: 10px;
     background: linear-gradient(90deg, var(--burgundy) 4.49%, var(--red) 93.87%);
     display: block;
+    border-radius: 2px;
 
 }
 .designs-category p{

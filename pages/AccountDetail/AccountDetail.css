@@ -1,0 +1,9 @@
+.user-data-detail{
+    margin-top: 0;
+}
+.account-info{
+    color: var(--white-text-color);
+    font-size: inherit;
+    text-transform: capitalize;
+    margin: 0;
+}

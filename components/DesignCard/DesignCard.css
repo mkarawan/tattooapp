@@ -7,16 +7,23 @@ a{
     text-decoration: none;
 }
 .design-card-description{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
     background: linear-gradient(var(--red), var(--red)) no-repeat center/1px 100%;
-
-
 }
+.design-card-description p{
+    text-align: center;
+    margin: 0.2rem;
+}
+
 p{
     color: var(--pink-text-color);
     font-weight: 500;
 }
 img{
     max-width: 100%;
+}
+.heart{
+    z-index: 1000;
 }

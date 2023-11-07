@@ -1,0 +1,45 @@
+.visit-date{
+flex: auto
+}
+.visit-date p{
+    margin: 0;
+    color: var(--white-text-color);
+    text-align: right;
+}
+.visit-date p:nth-child(2){
+    font-size: 0.9rem;
+    color: var(--grey-text-color);
+}
+.visit-btn{
+    max-width: 190px;
+    font-size: small;
+    padding: 8px 8px;
+    margin: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+}
+.visit-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.visit-details img{
+    max-width: 80px;
+    height: fit-content;
+}
+.visit-btn svg{
+    width: 15px;
+    height: 15px;
+}
+.red-btn{
+    background: linear-gradient(90deg, #4F0000 0%, #930000 100%);
+    color: #FF626B;
+}
+.visit-data{
+    padding-bottom: 0;
+}
+.my-visits{
+    margin: 1rem 0 0.5rem 0;
+}

@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ArtistDetail.css";
 import BackButton from "../../components/BackButton/BackButton";
 import Stars from "../../components/Stars/Stars";
 import DesignCard from "../../components/DesignCard/DesignCard";
 import { Link } from "react-router-dom";
+import ViewButton from "../../components/ViewButton/ViewButton.tsx";
 
 const ArtistDetail: React.FC = () => {
+  const [viewType, setViewType] = useState<boolean>(false);
+  const [category, setCategory] = useState<boolean>(false);
+
   return (
     <>
       <BackButton />
@@ -41,12 +45,29 @@ const ArtistDetail: React.FC = () => {
       </div>
 
       <div className="designs-category">
-        <p className="chosen-category">Wolne</p>
-        <p>Wykonane</p>
+        <p
+          onClick={() => setCategory(false)}
+          className={!category ? "chosen-category" : ""}
+        >
+          Nadchodzące
+        </p>
+        <p
+          onClick={() => setCategory(true)}
+          className={category ? "chosen-category" : ""}
+        >
+          Zakończone
+        </p>
       </div>
-      <DesignCard />
-      <DesignCard />
-      <DesignCard />
+      <ViewButton
+        onClickColumns={() => setViewType(!setViewType)}
+        onClickRows={() => setViewType(!viewType)}
+      />
+      <div className={viewType ? "grid-view" : "view"}>
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+        <DesignCard />
+      </div>
     </>
   );
 };

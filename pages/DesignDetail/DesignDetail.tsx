@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import BackButton from "../../components/BackButton/BackButton";
 import "./DesignDetail.css";
 import { IconContext } from "react-icons";
-import { CiHeart } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { BsHeart, BsHeartFill } from "react-icons/bs";
 
 const DesignDetail: React.FC = () => {
+  const [isFavourite, setIsFavourite] = useState<boolean>(false);
+
   return (
     <>
       <BackButton />
-      <div className="favourites">
-        <p>Ulubione️</p>
-        <IconContext.Provider
-          value={{ size: "25px", color: "var(--grey-text-color)" }}
-        >
-          <div>
-            <CiHeart />
-          </div>
-        </IconContext.Provider>
+      <div className="favourites" onClick={() => setIsFavourite(!isFavourite)}>
+        <p className={isFavourite ? "pink" : "grey"}>Ulubione️</p>
+        {!isFavourite && (
+          <IconContext.Provider
+            value={{
+              size: "18px",
+              color: "var(--grey-text-color)",
+            }}
+          >
+            <div>
+              <BsHeart />
+            </div>
+          </IconContext.Provider>
+        )}
+        {isFavourite && (
+          <IconContext.Provider
+            value={{
+              size: "18px",
+              color: "var(--pink-text-color",
+            }}
+          >
+            <div>
+              <BsHeartFill />
+            </div>
+          </IconContext.Provider>
+        )}
       </div>
       <img src={"tattoo1.jpg"} alt={"tattoo-design"} />
       <div className="padding">
@@ -33,16 +52,16 @@ const DesignDetail: React.FC = () => {
           <button className="gradientBtn book-btn">Umów się</button>
         </Link>
       </div>
-      <div className="tattoo-info">
-        <div className="tattoo-info-line">
+      <div className="info">
+        <div className="info-line">
           <p className="uppercase-small">Miejsce</p>
           <p className="uppercase-small">wszystkie</p>
         </div>
-        <div className="tattoo-info-line">
+        <div className="info-line">
           <p className="uppercase-small">kolor</p>
           <p className="uppercase-small">czarny</p>
         </div>
-        <div className="tattoo-info-line">
+        <div className="info-line">
           <p className="uppercase-small">rozmiar</p>
           <p className="uppercase-small">od 15cm</p>
         </div>
