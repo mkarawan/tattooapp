@@ -4,12 +4,15 @@ import "./DesignDetail.css";
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 import { BsHeart, BsHeartFill } from "react-icons/bs";
+import Header from "../../components/Header/Header.tsx";
 
 const DesignDetail: React.FC = () => {
   const [isFavourite, setIsFavourite] = useState<boolean>(false);
 
   return (
     <>
+      <Header />
+
       <BackButton />
       <div className="favourites" onClick={() => setIsFavourite(!isFavourite)}>
         <p className={isFavourite ? "pink" : "grey"}>Ulubione️</p>

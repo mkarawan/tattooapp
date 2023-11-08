@@ -3,10 +3,13 @@ import React from "react";
 import "./Home.css";
 import SearchBar from "../../components/SearchBar/SearchBar.tsx";
 import DesignCard from "../../components/DesignCard/DesignCard.tsx";
+import Header from "../../components/Header/Header.tsx";
 
 const Home: React.FC = () => {
   return (
     <>
+      <Header />
+
       <div className="padding">
         <div className="greeting-text">
           <h1 className="title-text">

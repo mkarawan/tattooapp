@@ -7,7 +7,6 @@ import Artists from "../pages/Artists/Artists";
 import ArtistDetail from "../pages/ArtistDetail/ArtistDetail";
 import BookingDesign from "../pages/Booking/BookingDesign";
 import BookingIndividual from "../pages/Booking/BookingIndividual";
-import Header from "../components/Header/Header";
 import Account from "../pages/Account/Account";
 import Favourites from "../pages/Favourites/Favourites";
 import AccountDetail from "../pages/AccountDetail/AccountDetail";
@@ -15,12 +14,12 @@ import Visits from "../pages/Visits/Visits";
 import LeaveOpinion from "../pages/LeaveOpinion/LeaveOpinion";
 import Login from "../pages/Login/Login";
 import Registration from "../pages/Registration/Registration.tsx";
+import NavigationBar from "../components/NavigationBar/NavigationBar.tsx";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/designs" element={<Designs />} />
@@ -37,6 +36,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/registration" element={<Registration />} />
         </Routes>
+        <NavigationBar />
       </BrowserRouter>
     </>
   );

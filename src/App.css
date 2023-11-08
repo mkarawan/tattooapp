@@ -56,3 +56,10 @@ header img {
   text-transform: uppercase;
   margin: 0;
 }
+.user-avatar{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 100%;
+}

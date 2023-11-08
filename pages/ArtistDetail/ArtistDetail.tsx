@@ -5,6 +5,7 @@ import Stars from "../../components/Stars/Stars";
 import DesignCard from "../../components/DesignCard/DesignCard";
 import { Link } from "react-router-dom";
 import ViewButton from "../../components/ViewButton/ViewButton.tsx";
+import Header from "../../components/Header/Header.tsx";
 
 const ArtistDetail: React.FC = () => {
   const [viewType, setViewType] = useState<boolean>(false);
@@ -12,6 +13,8 @@ const ArtistDetail: React.FC = () => {
 
   return (
     <>
+      <Header />
+
       <BackButton />
       <div className="padding">
         <div className={"first-line"}>

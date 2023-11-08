@@ -9,3 +9,9 @@
 .account-info-header{
     text-transform: capitalize;
 }
+.edit-input{
+    border: none;
+    text-align: right;
+    padding: 0;
+    max-width: fit-content;
+}

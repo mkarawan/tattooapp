@@ -1,0 +1,9 @@
+.header-flex{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.header-flex p{
+    margin: 0;
+    padding-left: 1rem;
+
+}

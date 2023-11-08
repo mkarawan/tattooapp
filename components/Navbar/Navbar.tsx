@@ -38,9 +38,6 @@ const Navbar: React.FC<{ hideNavbar: () => void }> = ({ hideNavbar }) => {
             <img src="user.jpg" alt="user-avatar" />
             <p className="uppercase">nazwa użytkownika</p>
           </Link>
-          <Link to="/login">
-            <p className="logout">Wyloguj się</p>
-          </Link>
         </div>
       </div>
     </>

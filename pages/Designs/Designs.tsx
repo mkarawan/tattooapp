@@ -4,12 +4,15 @@ import "./Design.css";
 import BackButton from "../../components/BackButton/BackButton.tsx";
 import SearchBar from "../../components/SearchBar/SearchBar.tsx";
 import ViewButton from "../../components/ViewButton/ViewButton.tsx";
+import Header from "../../components/Header/Header.tsx";
 
 const Designs: React.FC = () => {
   const [viewType, setViewType] = useState<boolean>(false);
 
   return (
     <>
+      <Header />
+
       <BackButton />
       <div className="padding">
         <h1 className={"title-text header-text"}>Wzory</h1>

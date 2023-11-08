@@ -4,10 +4,13 @@ import "./Artists.css";
 import BackButton from "../../components/BackButton/BackButton";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import ArtistCard from "../../components/ArtistCard/ArtistCard";
+import Header from "../../components/Header/Header.tsx";
 
 const Artists: React.FC = () => {
   return (
     <>
+      <Header />
+
       <BackButton />
 
       <div className="padding">

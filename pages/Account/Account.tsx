@@ -3,10 +3,12 @@ import "./Account.css";
 import Stars from "../../components/Stars/Stars";
 import OpinionCard from "../../components/OpinionCard/OpinionCard";
 import { Link } from "react-router-dom";
+import BackButton from "../../components/BackButton/BackButton.tsx";
 
 const Account: React.FC = () => {
   return (
     <>
+      <BackButton />
       <div className="padding">
         <div className="user-data">
           <img src="user.jpg" alt="user-avatar" />

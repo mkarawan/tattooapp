@@ -11,14 +11,13 @@ flex: auto
     color: var(--grey-text-color);
 }
 .visit-btn{
-    max-width: 190px;
+    max-width: 200px;
     font-size: small;
     padding: 8px 8px;
-    margin: 10px;
     text-align: left;
     display: flex;
     justify-content: space-between;
-    margin-left: 0;
+    margin: 10px 10px 10px 0;
 }
 .visit-details{
     display: flex;
