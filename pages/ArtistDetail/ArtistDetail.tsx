@@ -58,10 +58,13 @@ const ArtistDetail: React.FC = () => {
           Zakończone
         </p>
       </div>
-      <ViewButton
-        onClickColumns={() => setViewType(!setViewType)}
-        onClickRows={() => setViewType(!viewType)}
-      />
+      <div className="padding">
+        <ViewButton
+          onClickColumns={() => setViewType(!setViewType)}
+          onClickRows={() => setViewType(!viewType)}
+        />
+      </div>
+
       <div className={viewType ? "grid-view" : "view"}>
         <DesignCard />
         <DesignCard />

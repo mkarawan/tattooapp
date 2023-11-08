@@ -32,12 +32,16 @@ const Navbar: React.FC<{ hideNavbar: () => void }> = ({ hideNavbar }) => {
             <p className="uppercase">kontakt</p>
           </div>
         </div>
-        <Link to="/account">
-          <div className="user" onClick={hideNavbar}>
+
+        <div className="user" onClick={hideNavbar}>
+          <Link to="/account">
             <img src="user.jpg" alt="user-avatar" />
             <p className="uppercase">nazwa użytkownika</p>
-          </div>
-        </Link>
+          </Link>
+          <Link to="/login">
+            <p className="logout">Wyloguj się</p>
+          </Link>
+        </div>
       </div>
     </>
   );

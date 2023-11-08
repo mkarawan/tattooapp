@@ -65,6 +65,10 @@ const DesignDetail: React.FC = () => {
           <p className="uppercase-small">rozmiar</p>
           <p className="uppercase-small">od 15cm</p>
         </div>
+        <div className="info-line">
+          <p className="uppercase-small">autor</p>
+          <p className="uppercase-small">Ania</p>
+        </div>
       </div>
     </>
   );

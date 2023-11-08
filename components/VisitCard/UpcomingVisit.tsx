@@ -11,6 +11,7 @@ const UpcomingVisit: React.FC = () => {
           <img src="artist1.jpg" alt="user-avatar" />
           <div className="opinion-user-data ">
             <p className="uppercase-small">User1</p>
+            <p className="design-name">Nazwa wzoru</p>
           </div>
           <div className="visit-date">
             <p>14.12.2023</p>
@@ -27,7 +28,6 @@ const UpcomingVisit: React.FC = () => {
               <AiOutlineClose />
             </button>
           </div>
-          <img src="tattoo1.jpg" />
         </div>
       </div>
     </>

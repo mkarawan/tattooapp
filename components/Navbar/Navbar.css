@@ -14,10 +14,13 @@
 }
 
 .navbar .user{
-    display: flex;
+    display: inline;
     padding-bottom: 2rem;
     align-items: center;
     max-width: 220px;
+}
+.navbar .user a{
+    display: flex;
 }
 .navbar .user img{
     width: 70px;
@@ -42,4 +45,15 @@ span{
 }
 .links p{
     margin-top: 2.5rem;
+}
+.logout{
+    padding-top: 1rem;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    letter-spacing: 3px;
+    text-align: right;
+    font-weight: 300;
+}
+.logout:active{
+    color: var(--pink-text-color);
 }

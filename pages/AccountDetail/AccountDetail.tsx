@@ -26,16 +26,16 @@ const AccountDetail: React.FC = () => {
       </div>
       <div className="info">
         <div className="info-line">
-          <p className="account-info">email</p>
-          <p className="account-info">wszystkie</p>
+          <p className="account-info account-info-header">email</p>
+          <p className="account-info">email@email.com</p>
         </div>
         <div className="info-line">
-          <p className="account-info">telefon</p>
-          <p className="account-info">czarny</p>
+          <p className="account-info account-info-header">telefon</p>
+          <p className="account-info">607156234</p>
         </div>
         <div className="info-line">
-          <p className="account-info">data dołączenia</p>
-          <p className="account-info">od 15cm</p>
+          <p className="account-info account-info-header">data dołączenia</p>
+          <p className="account-info">8.11.2023</p>
         </div>
       </div>
     </>

@@ -12,7 +12,9 @@ import Account from "../pages/Account/Account";
 import Favourites from "../pages/Favourites/Favourites";
 import AccountDetail from "../pages/AccountDetail/AccountDetail";
 import Visits from "../pages/Visits/Visits";
-import LeaveOpinion from "../pages/LeaveOpinion/LeaveOpinion.tsx";
+import LeaveOpinion from "../pages/LeaveOpinion/LeaveOpinion";
+import Login from "../pages/Login/Login";
+import Registration from "../pages/Registration/Registration.tsx";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/accountDetail" element={<AccountDetail />} />
           <Route path="/visits" element={<Visits />} />
           <Route path="/leaveOpinion" element={<LeaveOpinion />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/registration" element={<Registration />} />
         </Routes>
       </BrowserRouter>
     </>

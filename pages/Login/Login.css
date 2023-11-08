@@ -1,0 +1,28 @@
+.new-account-btn {
+  background: none;
+  border-bottom: 3px solid var(--burgundy);
+  max-width: 300px;
+  padding-bottom: 0.2rem;
+  margin-bottom: 2rem;
+  margin-top: auto;
+  cursor: pointer;
+}
+.login-input {
+  margin-bottom: 1.5rem;
+}
+.padding2 .title-text {
+  margin-bottom: 1.5rem;
+}
+.padding2 {
+  padding: 350px 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  box-sizing: border-box;
+    background-image: url("./login-background.jpg");
+    background-position: initial;
+    background-size: cover;
+}
+.padding2 input:focus{
+    box-shadow: 0px 0px 4px 0px var(--pink-text-color)
+}

@@ -14,11 +14,12 @@ const Designs: React.FC = () => {
       <div className="padding">
         <h1 className={"title-text header-text"}>Wzory</h1>
         <SearchBar />
+        <ViewButton
+          onClickColumns={() => setViewType(!setViewType)}
+          onClickRows={() => setViewType(!viewType)}
+        />
       </div>
-      <ViewButton
-        onClickColumns={() => setViewType(!setViewType)}
-        onClickRows={() => setViewType(!viewType)}
-      />
+
       <div className={viewType ? "grid-view" : "view"}>
         <DesignCard />
         <DesignCard />
