@@ -10,9 +10,9 @@ const AccountDetail: React.FC = () => {
 
   return (
     <>
-      <BackButton />
+      <BackButton headerSection={"Dane"} />
       <div className="padding">
-        <p className="title-text">Dane</p>
+        {/*<p className="title-text">Dane</p>*/}
         <div className="user-data user-data-detail">
           <img src="user.jpg" alt="user-avatar" />
           <div>

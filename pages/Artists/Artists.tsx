@@ -11,10 +11,10 @@ const Artists: React.FC = () => {
     <>
       <Header />
 
-      <BackButton />
+      <BackButton headerSection={"Artyści"} />
 
       <div className="padding">
-        <h1 className={"title-text header-text"}>Artyści</h1>
+        {/*<h1 className={"title-text header-text"}>Artyści</h1>*/}
         <SearchBar />
       </div>
       <Link to="/artistDetail">

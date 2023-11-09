@@ -1,14 +1,16 @@
-.nav{
+.nav {
     height: 80px;
     background: linear-gradient(90deg, var(--burgundy) 4.49%, var(--red) 93.87%);
     bottom: 0;
     position: fixed;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
     max-width: 400px;
     box-sizing: border-box;
+    padding: 3px;
+    /*box-shadow: 0px 0px 9px 3px rgba(92, 22, 46, 0.6);}*/
 }
 .nav-link {
 text-align: center;
@@ -18,16 +20,23 @@ text-align: center;
     font-size: 0.8rem;
     margin-top: -0.3rem;
 }
+nav > {
+    padding-top: 3px;
+}
 
 .designs-selected > :nth-child(2){
     grid-column:2;
     box-sizing: border-box;
     border-top: 3px solid rgba(197, 70, 114, 0.6);
+    margin-top: -3px;
 }
 .artists-selected > :nth-child(3){
     box-sizing: border-box;
     border-top: 3px solid rgba(197, 70, 114, 0.6);
+    margin-top: -3px;
 }
 .home-selected > :first-child{
     border-top: 3px solid rgba(197, 70, 114, 0.6);
+    margin-top: -3px;
 }
+

@@ -1,6 +1,16 @@
 .button-back{
-    width: 25px;
+    color: var(--white-text-color);
     cursor: pointer;
     padding-left: 1rem;
-    padding-top: 2rem;
+    /*padding-top: 2rem;*/
+}
+.header-flex{
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.header-flex p{
+    margin: 0;
+    font-weight: 300;
+    font-size: 20px;
 }

@@ -9,9 +9,9 @@ const Visits: React.FC = () => {
 
   return (
     <>
-      <BackButton />
+      <BackButton headerSection={"Moje wizyty"} />
       <div className="padding">
-        <p className="title-text my-visits">Moje wizyty</p>
+        {/*<p className="title-text my-visits">Moje wizyty</p>*/}
       </div>
       <div className="designs-category">
         <p

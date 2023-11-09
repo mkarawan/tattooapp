@@ -1,7 +1,7 @@
 .design-card{
     max-width: 100%;
     border: 1px solid var(--red);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 a{
     text-decoration: none;

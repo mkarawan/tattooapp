@@ -7,15 +7,15 @@ import ViewButton from "../../components/ViewButton/ViewButton.tsx";
 import Header from "../../components/Header/Header.tsx";
 
 const Designs: React.FC = () => {
-  const [viewType, setViewType] = useState<boolean>(false);
+  const [viewType, setViewType] = useState<boolean>(true);
 
   return (
     <>
       <Header />
 
-      <BackButton />
+      <BackButton headerSection={"Wzory"} />
       <div className="padding">
-        <h1 className={"title-text header-text"}>Wzory</h1>
+        {/*<h1 className={"title-text header-text"}>Wzory</h1>*/}
         <SearchBar />
         <ViewButton
           onClickColumns={() => setViewType(!setViewType)}

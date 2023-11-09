@@ -5,15 +5,11 @@ import DesignCard from "../../components/DesignCard/DesignCard";
 import ViewButton from "../../components/ViewButton/ViewButton.tsx";
 
 const Favourites: React.FC = () => {
-  const [viewType, setViewType] = useState<boolean>(false);
+  const [viewType, setViewType] = useState<boolean>(true);
 
   return (
     <>
-      <div className="header-flex">
-        <BackButton />
-        <p className="title-text">Ulubione</p>
-      </div>
-
+      <BackButton headerSection={"Ulubione"} />
       <div className="padding">
         <ViewButton
           onClickColumns={() => setViewType(!setViewType)}
