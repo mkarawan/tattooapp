@@ -1,0 +1,31 @@
+input[type='file'] {
+    -webkit-appearence: none;
+    color: var(--white-text-color);
+    padding: 4rem 2rem;
+    background: none;
+    outline: none;
+    display: block;
+    font-size: 0.8rem;
+}
+input[type="file"]::file-selector-button{
+    color: var(--pink-text-color);
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+select{
+    background: none;
+    outline: none;
+    border: 1px solid var(--burgundy);
+    border-radius: 7px;
+    color: var(--grey-text-color);
+    font-size: inherit;
+    padding: 10px;
+}
+.new-design{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}

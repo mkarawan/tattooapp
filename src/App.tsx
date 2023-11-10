@@ -13,8 +13,9 @@ import AccountDetail from "../pages/AccountDetail/AccountDetail";
 import Visits from "../pages/Visits/Visits";
 import LeaveOpinion from "../pages/LeaveOpinion/LeaveOpinion";
 import Login from "../pages/Login/Login";
-import Registration from "../pages/Registration/Registration.tsx";
-import NavigationBar from "../components/NavigationBar/NavigationBar.tsx";
+import Registration from "../pages/Registration/Registration";
+import NavigationBar from "../components/NavigationBar/NavigationBar";
+import NewDesign from "../pages/NewDesign/NewDesign";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/leaveOpinion" element={<LeaveOpinion />} />
           <Route path="/login" element={<Login />} />
           <Route path="/registration" element={<Registration />} />
+          <Route path="/newDesign" element={<NewDesign />} />
         </Routes>
         <NavigationBar />
       </BrowserRouter>

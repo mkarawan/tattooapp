@@ -74,6 +74,7 @@ const ArtistDetail: React.FC = () => {
         <DesignCard />
         <DesignCard />
       </div>
+      <button className="gradientBtn book-btn">Dodaj +</button>
     </>
   );
 };

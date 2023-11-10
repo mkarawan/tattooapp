@@ -6,11 +6,9 @@ import TattooInfo from "../../components/TattooInfo/TattooInfo.tsx";
 const BookingIndividual: React.FC = () => {
   return (
     <>
-      <BackButton />
+      <BackButton headerSection="wzór indywidualny" />
       <div className="padding">
-        <div className={"first-line"}>
-          <h1 className="title-text">wzór indywidualny</h1>
-        </div>
+        <div className={"first-line"}></div>
 
         <TattooInfo />
         <h1>TU KALENDARZ</h1>

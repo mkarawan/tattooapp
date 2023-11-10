@@ -5,3 +5,37 @@
     font-size: 1.2rem;
     color: var(--white-text-color);
 }
+.new-btn{
+    color: var(--pink-text-color);
+    border-bottom: 2px solid var(--pink-text-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.5rem;
+
+}
+.new-btn:first-child{
+    margin-top: 1.5rem;
+}
+.thin{
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+.reservation-line{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--red);
+    padding: 0 1rem;
+    cursor: pointer;
+}
+.reservation-line:nth-child(odd){
+    background-color: rgba(124, 22, 46, 0.14);
+}
+.reservation-line p{
+    color: var(--white-text-color);
+
+}
